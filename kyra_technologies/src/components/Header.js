@@ -107,20 +107,20 @@ function Header() {
                                                                         <div className="bottom-hover">Maintenance and Support</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='migration-integration.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/migrationIntigrationPage' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fas fa-network-wired"></i></div>
                                                                         <div className="bottom-hover">Migration and Integration</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='consulting.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/consultingPage' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="far fa-browser"></i></div>
                                                                         <div className="bottom-hover">Consulting</div>
 
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='lighting.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/lightingPage' className="text-decoration-none text-dark">
                                                                     <div className="d-flex">
                                                                         <div className="w-10 text-start"><i className="fas fa-bolt"></i></div>
                                                                         <div className="bottom-hover">Lighting</div>
@@ -139,25 +139,25 @@ function Header() {
                                                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body p-0 pb-3">
                                                             <ul type='none' className="px-0 nav flex-column d-block">
-                                                                <li><a href='ux-research.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/ux_researchPage' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fab fa-searchengin"></i></div>
                                                                         <div className="bottom-hover">UX Research</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='ui-animation.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/ui_animationPage' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fas fa-radiation-alt"></i></div>
                                                                         <div className="bottom-hover">UI & Animation</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='design-testing.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/designTestingPage' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fas fa-paint-brush"></i></div>
                                                                         <div className="bottom-hover">Design Testing</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='product-design.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/productDesignPage' className="text-decoration-none text-dark">
                                                                     <div className="d-flex">
                                                                         <span className="w-10 text-start"><i className="fab fa-product-hunt"></i></span>
                                                                         <span className="bottom-hover">Product Design</span>

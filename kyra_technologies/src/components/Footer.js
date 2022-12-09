@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <>
+        <div className='wrapper'>
             <section className="pt-6 footer-bg">
                 <div className="container text-center">
                     <div className="d-md-flex align-items-center justify-content-center mt-3">
@@ -97,7 +97,7 @@ function Footer() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 
