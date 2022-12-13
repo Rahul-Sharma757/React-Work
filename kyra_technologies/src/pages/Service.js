@@ -25,7 +25,7 @@ function Service() {
                   <h4 className="mt-8-5">Custom Apps</h4>
                   <ul type="none" className="ps-0">
                     <li>
-                      <a href="mobile-app-development.html" className="text-decoration-none text-dark">
+                      <a href="/mobileAppDevelopmentPage" className="text-decoration-none text-dark">
                         <div className="d-flex mb-2">
                           <div className="w-10 text-start"><i className="fab fa-apple"></i></div>
                           <div className="bottom-hover">Mobile App Development</div>
@@ -33,7 +33,7 @@ function Service() {
                       </a>
                     </li>
                     <li>
-                      <a href="web-app-development.html" className="text-decoration-none text-dark">
+                      <a href="/webAppDevelopment" className="text-decoration-none text-dark">
                         <div className="d-flex">
                           <div className="w-10 text-start"><i className="far fa-browser"></i></div>
                           <div className="bottom-hover">Web App Development</div>
@@ -51,25 +51,25 @@ function Service() {
                 <div className="position-absolute px-4 text-start show-hover w-100 overflow-hidden">
                   <h4 className="mt-8-5">Salesforce</h4>
                   <ul type="none" className="ps-0">
-                    <li><a href="maintenance-support.html" className="text-decoration-none text-dark">
+                    <li><a href="/maintainanceSupportPage" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="fas fa-headset"></i></div>
                         <div className="bottom-hover">Maintenance and Support</div>
                       </div>
                     </a></li>
-                    <li><a href="migration-integration.html" className="text-decoration-none text-dark">
+                    <li><a href="/migrationIntigrationPage" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="fas fa-network-wired"></i></div>
                         <div className="bottom-hover">Migration and Integration</div>
                       </div>
                     </a></li>
-                    <li><a href="consulting.html" className="text-decoration-none text-dark">
+                    <li><a href="/consultingPage" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="far fa-browser"></i></div>
                         <div className="bottom-hover">Consulting</div>
                       </div>
                     </a></li>
-                    <li><a href="lighting.html" className="text-decoration-none text-dark">
+                    <li><a href="/lightingPage" className="text-decoration-none text-dark">
                       <div className="d-flex">
                         <div className="w-10 text-start"><i className="fas fa-bolt"></i></div>
                         <div className="bottom-hover">Lighting</div>
@@ -86,25 +86,25 @@ function Service() {
                 <div className="position-absolute px-4 text-start show-hover w-100 overflow-hidden">
                   <h4 className="mt-8-5">UI/UX</h4>
                   <ul type="none" className="ps-0">
-                    <li className="me-auto"><a href="ux-research.html" className="text-decoration-none text-dark">
+                    <li className="me-auto"><a href="/ux_researchPage" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="fab fa-searchengin"></i></div>
                         <div className="bottom-hover">UX Research</div>
                       </div>
                     </a></li>
-                    <li className="me-auto"><a href="ui-animation.html" className="text-decoration-none text-dark">
+                    <li className="me-auto"><a href="/ui_animationPage" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="fas fa-radiation-alt"></i></div>
                         <div className="bottom-hover">UI & Animation</div>
                       </div>
                     </a></li>
-                    <li className="me-auto"><a href="design-testing.html" className="text-decoration-none text-dark">
+                    <li className="me-auto"><a href="/designTestingPage" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="fas fa-paint-brush"></i></div>
                         <div className="bottom-hover">Design Testing</div>
                       </div>
                     </a></li>
-                    <li className="me-auto"><a href="product-design.html" className="text-decoration-none text-dark">
+                    <li className="me-auto"><a href="/productDesignPage" className="text-decoration-none text-dark">
                       <div className="d-flex">
                         <div className="w-10 text-start"><i className="fab fa-product-hunt"></i></div>
                         <div className="bottom-hover">Product Design</div>
@@ -124,7 +124,7 @@ function Service() {
                   <h4 className="mt-8-5">Web Development</h4>
                   <ul type="none" className="ps-0">
                     <li>
-                      <a href="php-development.html" className="text-decoration-none text-dark">
+                      <a href="/phpDevelopmentPage" className="text-decoration-none text-dark">
                         <div className="d-flex mb-2">
                           <div className="w-10 text-start"><i className="fab fa-php"></i></div>
                           <div className="bottom-hover">PHP Development</div>
@@ -132,7 +132,7 @@ function Service() {
                       </a>
                     </li>
                     <li>
-                      <a href="mern-stack-development.html" className="text-decoration-none text-dark">
+                      <a href="/mernStackDevelopment" className="text-decoration-none text-dark">
                         <div className="d-flex mb-2">
                           <div className="w-10 text-start"><i className="fas fa-file-code"></i></div>
                           <div className="bottom-hover">MERN Stack Development</div>
@@ -140,7 +140,7 @@ function Service() {
                       </a>
                     </li>
                     <li>
-                      <a href="node-js-development.html" className="text-decoration-none text-dark">
+                      <a href="/nodeJsDevelopment" className="text-decoration-none text-dark">
                         <div className="d-flex mb-2">
                           <div className="w-10 text-start"><i className="fab fa-node-js"></i></div>
                           <div className="bottom-hover">Node Js Development</div>
@@ -148,7 +148,7 @@ function Service() {
                       </a>
                     </li>
                     <li>
-                      <a href="react-js-development.html" className="text-decoration-none text-dark">
+                      <a href="/reactJsDevelopment" className="text-decoration-none text-dark">
                         <div className="d-flex">
                           <div className="w-10 text-start"><i className="fab fa-js"></i></div>
                           <div className="bottom-hover">React Js Development</div>
@@ -166,13 +166,13 @@ function Service() {
                 <div className="position-absolute px-4 text-start show-hover w-100 overflow-hidden">
                   <h4 className="mt-8-5">Mobile App Development</h4>
                   <ul type="none" className="ps-0">
-                    <li><a href="e-commerce-development.html" className="text-decoration-none text-dark">
+                    <li><a href="/ecommerceDevelopment" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="fas fa-user-graduate"></i></div>
                         <div className="bottom-hover">E-commerce Development</div>
                       </div>
                     </a></li>
-                    <li><a href="react-native-app.html" className="text-decoration-none text-dark">
+                    <li><a href="/reactNativeAppDevelopment" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="fab fa-react"></i></div>
                         <div className="bottom-hover">React Native App Development</div>
@@ -189,13 +189,13 @@ function Service() {
                 <div className="position-absolute px-4 text-start show-hover w-100 overflow-hidden">
                   <h4 className="mt-8-5">CMS & E-commerce</h4>
                   <ul type="none" className="ps-0">
-                    <li><a href="wordpress-development.html" className="text-decoration-none text-dark">
+                    <li><a href="/wordPressDevelopment" className="text-decoration-none text-dark">
                       <div className="d-flex mb-2">
                         <div className="w-10 text-start"><i className="fab fa-wordpress-simple"></i></div>
                         <div className="bottom-hover">Word press Development</div>
                       </div>
                     </a></li>
-                    <li><a href="e-commerce-cms-development.html" className="text-decoration-none text-dark">
+                    <li><a href="/ecommerceCmsDevelopment" className="text-decoration-none text-dark">
                       <div className="d-flex">
                         <div className="w-10 text-start"><i className="fas fa-user-graduate"></i></div>
                         <div className="bottom-hover">E-commerce Development</div>

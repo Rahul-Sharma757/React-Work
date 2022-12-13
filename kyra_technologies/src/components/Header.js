@@ -176,25 +176,25 @@ function Header() {
                                                     <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body p-0 pb-3">
                                                             <ul type='none' className="px-0 nav flex-column d-block">
-                                                                <li><a href='php-development.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/phpDevelopmentPage' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fab fa-php"></i></div>
                                                                         <div className="bottom-hover">PHP Development</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='mern-stack-development.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/mernStackDevelopment' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fas fa-file-code"></i></div>
                                                                         <div className="bottom-hover">MERN Stack Development</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='node-js-development.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/nodeJsDevelopment' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fab fa-node-js"></i></div>
                                                                         <div className="bottom-hover">Node Js Development</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='react-js-development.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/reactJsDevelopment' className="text-decoration-none text-dark">
                                                                     <div className="d-flex">
                                                                         <div className="w-10 text-start"><i className="fab fa-js"></i></div>
                                                                         <div className="bottom-hover">React Js Development</div>
@@ -213,13 +213,13 @@ function Header() {
                                                     <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body p-0 pb-3">
                                                             <ul type='none' className="px-0 nav flex-column d-block">
-                                                                <li><a href='e-commerce-development.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/ecommerceDevelopment' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fas fa-user-graduate"></i></div>
                                                                         <div className="bottom-hover">E-commerce Development</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='react-native-app.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/reactNativeAppDevelopment' className="text-decoration-none text-dark">
                                                                     <div className="d-flex">
                                                                         <div className="w-10 text-start"><i className="fab fa-react"></i></div>
                                                                         <div className="bottom-hover">React Native App Development</div>
@@ -238,13 +238,13 @@ function Header() {
                                                     <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body p-0">
                                                             <ul type='none' className="px-0 nav flex-column d-block">
-                                                                <li><a href='wordpress-development.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/wordPressDevelopment' className="text-decoration-none text-dark">
                                                                     <div className="d-flex mb-2">
                                                                         <div className="w-10 text-start"><i className="fab fa-wordpress-simple"></i></div>
                                                                         <div className="bottom-hover">Word press Development</div>
                                                                     </div>
                                                                 </a></li>
-                                                                <li><a href='e-commerce-cms-development.html' className="text-decoration-none text-dark">
+                                                                <li><a href='/ecommerceCmsDevelopment' className="text-decoration-none text-dark">
                                                                     <div className="d-flex">
                                                                         <div className="w-10 text-start"><i className="fas fa-user-graduate"></i></div>
                                                                         <div className="bottom-hover">E-commerce Development</div>

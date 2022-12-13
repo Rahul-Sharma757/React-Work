@@ -23,7 +23,7 @@ function About() {
                             satisfaction with utmost quality. Leveraging the power of technical skills we deliver end to end solutions for million dollar 
                             funded small and medium enterprises.
                         </p>
-                        <a href="about.html" className="btn position-relative px-4 py-2 btn-hover logo-clr shadow-none d-none d-lg-inline-block">Read more
+                        <a href="/aboutPage" className="btn position-relative px-4 py-2 btn-hover logo-clr shadow-none d-none d-lg-inline-block">Read more
                             <span className="forward-icon"><i className="fas fa-long-arrow-alt-right fs-5"></i></span>
                         </a>
                 </div>
