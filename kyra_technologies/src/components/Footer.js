@@ -1,6 +1,26 @@
 import React from 'react'
 
 function Footer() {
+
+    {
+        // let msg = document.getElementById('message');
+        // let submitBtn = document.getElementById('submition');
+        document.getElementById('submition').disabled = true;
+        document.getElementById('message').addEventListener("change", stateHandle);
+        function stateHandle() {
+          if (document.getElementById("message").input.value === null) {
+            document.getElementById('submition').disabled = true;
+          } else {
+            document.getElementById('submition').disabled = false;
+          }
+        }
+     }
+     
+    var submitionss = () => {
+     document.getElementById('hiddenFrame').style.display = "block";
+     document.getElementById('contactForm').style.display = "none";
+    }
+
     return (
         <div className='wrapper'>
             <section className="pt-6 footer-bg">
@@ -14,10 +34,10 @@ function Footer() {
                         </a>
                     </div>
                     <p className="fs-6 mt-1">E-309, Second Floor, Industrial Area Phase 8A, Mohali 160055, India</p>
-                    <a href=" " className="btn py-2 position-relative px-4 btn-hover shadow-none logo-clr" data-bs-toggle="modal" data-bs-target="#exampleModal">Say Hii!
+                    <a href=' ' className="btn py-2 position-relative px-4 btn-hover shadow-none logo-clr" data-bs-toggle="modal" data-bs-target="#exampleModalContact">Say Hii!
                         <span className="forward-icon"><i className="fas fa-long-arrow-alt-right fs-5"></i></span>
                     </a>
-                    <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal fade" id="exampleModalContact" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog modal-fullscreen">
                             <div className="modal-content footer-bg">
                                 <div className="text-center mt-3">
@@ -30,10 +50,10 @@ function Footer() {
                                             <p className="lead text-center">Getting in touch with us is not difficult at all.</p>
                                             <div className="col-lg-6 mt-3">
                                                 <iframe name="hiddenFrame" className="w-100 h-250" id="hiddenFrame" title='contactForm'></iframe>
-                                                <form id="contactForm" action="contact.php" target="hiddenFrame" method="post">
+                                                <form id="contactForm" action="Contact.php" target="hiddenFrame" method="post">
                                                     <div className="form-group mb-3 text-start">
                                                         <label htmlFor="name" className="lead">Name</label>
-                                                        <input type="text" className="form-control py-2" id="name" name="name" placeholder="enter your name" required />
+                                                        <input type="text" className="form-control py-2" id="name" name="name" placeholder="enter your name"  />
                                                     </div>
                                                     <div className="form-group mb-3 text-start">
                                                         <label htmlFor="mail" className="lead">E-mail</label>
@@ -41,18 +61,18 @@ function Footer() {
                                                     </div>
                                                     <div className="form-group mb-3 text-start">
                                                         <label htmlFor="company" className="lead">Company</label>
-                                                        <input type="text" id="message" className="form-control py-2" name="company" placeholder="enter your company name" required />
+                                                        <input type="text" className="form-control py-2" name="company" placeholder="enter your company name" required />
                                                     </div>
                                                     <div className="form-group mb-3 text-start d-none">
                                                         <label htmlFor="sub"></label>
                                                         <input type="text" id="sub" className="form-control py-2" name="subject" placeholder="Do not fill this!" disabled />
                                                     </div>
                                                     <div className="form-group mb-3 text-start">
-                                                        <label htmlFor="message" className="lead">Message</label>
+                                                        <label htmlFor="message" id="message" className="lead">Message</label>
                                                         <textarea name="message" className="form-control py-2" placeholder="Your Message" required></textarea>
                                                     </div>
                                                     <div className="form-group text-start mt-5">
-                                                        <input type="submit" id="submition" className="btn py-2 position-relative px-4 btn-hover shadow-none logo-clr" value="Send Message" /*onClick="submitionss()"*/ /> <br />
+                                                        <input type="submit" id="submition" className="btn py-2 position-relative px-4 btn-hover shadow-none logo-clr" value="Send Message" onClick={submitionss} /> <br />
                                                         <lable htmlFor='submition' className="text-muted mt-2"><small>Please fill the form first to enable the Button.</small></lable>
                                                     </div>
                                                 </form>

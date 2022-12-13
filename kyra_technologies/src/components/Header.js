@@ -1,16 +1,20 @@
 import React from 'react'
+
 function Header() {
+    const [showResults, setShowResults] = React.useState(false);
+   
+    const onClick = () =>  { showResults === true? setShowResults(false):setShowResults(true)};
     var lastScrollTop = 0;
-    // var navbar = document.getElementById('upScroll');
+   
     window.addEventListener("scroll", function () {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         if (scrollTop > lastScrollTop) {
             document.getElementById('upScroll').style.top = '-100px';
         } else {
             document.getElementById('upScroll').style.top = "0";
         }
         lastScrollTop = scrollTop;
-        
+
     });
 
     var scrollDown = 0;
@@ -59,13 +63,13 @@ function Header() {
                             </div>
                             <div className="offcanvas-body">
                                 <ul className="nav flex-column">
-                                    <li className='sub-menu mb-3'><a href='#message' className="text-decoration-none fs-3 text-dark">
+                                    <li className='sub-menu mb-3'><a href='#message' onClick={onClick} id='sub-menua' className="text-decoration-none fs-3 text-dark">
                                         <div className="d-flex">
                                             <div>Services</div>
                                             <div className='fal fa-chevron-down right ms-auto'></div>
                                         </div>
                                     </a>
-                                        <ul type="none" className="px-0 w-100">
+                                    {showResults ? <ul type="none" className="px-0 w-100">
                                             <div className="accordion pt-3" id="accordionExample">
                                                 <div className="accordion-item border-0">
                                                     <h2 className="accordion-header" id="headingOne">
@@ -255,7 +259,8 @@ function Header() {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </ul>
+                                        </ul> : null }
+                                        
                                     </li>
                                     <li className="nav-item me-auto">
                                         <a href="/caseStudyPage" className="nav-link text-dark bottom-hover ps-0 fs-3">Case Study</a>
@@ -267,7 +272,7 @@ function Header() {
                                         <a href="/weAreHiringPage" className="nav-link text-dark bottom-hover ps-0 fs-3">We are Hiring</a>
                                     </li>
                                     <li className="nav-item me-auto">
-                                        <a href=" " className="nav-link text-dark bottom-hover ps-0 fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+                                        <a href=' ' className="nav-link text-dark bottom-hover ps-0 fs-3" data-bs-toggle="modal" data-bs-target="#exampleModalContact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
