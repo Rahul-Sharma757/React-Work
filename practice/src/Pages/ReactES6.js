@@ -37,7 +37,7 @@ function ReactES6() {
   const [mode, setMode] = useState('light'); // whether dark mode is enable or not
   const toggleMode = () => {
     if (mode === 'light') {
-      setMode('black');
+      setMode('dark');
       document.body.style.backgroundColor = 'black';
       document.body.style.color = 'white';
     } else {

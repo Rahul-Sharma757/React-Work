@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../Components/Header';
 
 export default function TextFrom(props) {
 
@@ -13,6 +12,7 @@ export default function TextFrom(props) {
     const handleDownClick = () => {
         let lowerText = text.toLowerCase();
         setText(lowerText);
+        props.showAlert("Converted to lowercase", "success")
     }
 
     const handleOnChange = (e) => { //to add new value in text area //
@@ -22,17 +22,19 @@ export default function TextFrom(props) {
     const handleClearClick = () => {
         let newText = '';
         setText(newText);
+        props.showAlert("Text Cleared", "success")
     }
     // Set FontWeight
     const handleBoldText = () => {
         let boldText = document.getElementById('mybox2');
         boldText.style.fontWeight = 'bold';
-
+        props.showAlert("Converted to Bold", "success")
     }
     // Set fontWeight 
     const handleLightText = () => {
         let boldText = document.getElementById('mybox2');
         boldText.style.fontWeight = '400';
+        props.showAlert("Converted to Normal Font", "success")
 
     }
     // Copy all text //
@@ -40,28 +42,17 @@ export default function TextFrom(props) {
         let cptxt = document.getElementById('mybox2');
         cptxt.select();
         navigator.clipboard.writeText(cptxt.value);
+        props.showAlert("Copied to clipboard", "success")
     }
     // Remove extra Space //
     const handleExtraSpace = () => {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "))
+        props.showAlert("extra spaces removed", "success")
     }
 
-    const [mode, setMode] = useState('light'); // whether dark mode is enable or not
-    const toggleMode = () => {
-        if (mode === 'light') {
-            setMode('dark');
-            document.body.style.backgroundColor = 'black';
-            document.body.style.color = 'white';
-        } else {
-            setMode('light');
-            document.body.style.backgroundColor = 'white';
-            document.body.style.color = 'black';
-        }
-    }
     return (
         <>
-            <Header NavbarBrand={"Brand1"} NavbarLink1={"React ES6"} NavbarLink2={"textForm"} NavbarLink3={"about"} toggleMode={toggleMode} mode={mode} />
             <div className='container py-5'>
                 <div className='row'>
                     <div className='col-md-8 offset-md-2'>
@@ -73,7 +64,7 @@ export default function TextFrom(props) {
                         <button onClick={handleUpClick} className='btn btn-primary py-2 px-5 mt-4'>Convert text to uppercase</button>
                         <button onClick={handleDownClick} className='btn btn-warning py-2 px-5 mt-4 ms-3'>Convert text to lowercase</button>
                         <button onClick={handleClearClick} className='btn btn-dark py-2 px-5 mt-4 ms-3'>Clear Text</button>
-                        <button onClick={handleBoldText} className='btn btn-dark py-2 px-5 mt-4'>Bold Text</button>
+                        <button onClick={handleBoldText} className='btn btn-dark py-2 px-5 mt-4 ms-3'>Bold Text</button>
                         <button onClick={handleLightText} className='btn btn-dark py-2 px-5 mt-4 ms-3'>Light Text</button>
                         <button onClick={handleCopy} className='btn btn-primary py-2 px-5 mt-4 ms-3'>Copy Text</button>
                         <button onClick={handleExtraSpace} className='btn btn-primary py-2 px-5 mt-4 ms-3'>Remove Extra Space</button>

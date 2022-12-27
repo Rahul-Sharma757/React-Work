@@ -9,7 +9,7 @@ function About() {
   });
   const toggleMode = () => {
     if (mode === 'light') {
-      setMode('black');
+      setMode('dark');
       document.body.style.backgroundColor = 'black';
       document.body.style.color = 'white';
       setAccordionBtnStyle({ color: ('white'), backgroundColor: ('black') });
