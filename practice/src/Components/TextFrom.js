@@ -48,9 +48,8 @@ export default function TextFrom(props) {
     const handleExtraSpace = () => {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "))
-        props.showAlert("extra spaces removed", "success")
+        props.showAlert("extra spaces removed", "success");
     }
-
     return (
         <>
             <div className='container py-5'>
@@ -73,7 +72,7 @@ export default function TextFrom(props) {
             </div>
             <div className='container'>
                 <h1>Your Text Summary</h1>
-                <p>{text.split(" ").length} words and {text.length} characters</p>
+                <p>{text.length > 0 ? (text.split(" ").length) - 1 : text.split(" ").length} words and {text.length} characters</p>
                 <p>{0.008 * text.split(" ").length} Minutes Read</p>
                 <h2>Preview</h2>
                 <p>{text.length > 0 ? text : "Enter something in the textbox above to preview it here..."}</p>

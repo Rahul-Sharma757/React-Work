@@ -1,36 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 function Header(props) {
     return (
         <>
             <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
                 <div className="container">
-                    <a className={`navbar-brand text-${props.mode === 'light' ? 'dark' : 'light'}`} href="/">{props.NavbarBrand}</a>
+                    <Link className={`navbar-brand text-${props.mode === 'light' ? 'dark' : 'light'}`} to="/">{props.NavbarBrand}</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className={`nav-link active text-${props.mode === 'light' ? 'dark' : 'light'}`} aria-current="page" href="/reactES6">{props.NavbarLink1}</a>
+                                <Link className={`nav-link active text-${props.mode === 'light' ? 'dark' : 'light'}`} aria-current="page" to="/reactES6">{props.NavbarLink1}</Link>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link text-${props.mode === 'light' ? 'dark' : 'light'}`} href="/textForm">{props.NavbarLink2}</a>
+                                <Link className={`nav-link text-${props.mode === 'light' ? 'dark' : 'light'}`} to="/textForm">{props.NavbarLink2}</Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className={`nav-link dropdown-toggle text-${props.mode === 'light' ? 'dark' : 'light'}`} href=" " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link className={`nav-link dropdown-toggle text-${props.mode === 'light' ? 'dark' : 'light'}`} to=" " role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     {props.NavbarDropdownText}
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href=" ">{props.DropdownLink1}</a></li>
-                                    <li><a className="dropdown-item" href=" ">{props.DropdownLink2}</a></li>
+                                    <li><Link className="dropdown-item" to=" ">{props.DropdownLink1}</Link></li>
+                                    <li><Link className="dropdown-item" to=" ">{props.DropdownLink2}</Link></li>
                                     <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href=" ">{props.DropdownLink3}</a></li>
+                                    <li><Link className="dropdown-item" to=" ">{props.DropdownLink3}</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a href="/about" className={`nav-link text-${props.mode === 'light' ? 'dark' : 'light'}`}>{props.NavbarLink3}</a>
+                                <Link to="/about" className={`nav-link text-${props.mode === 'light' ? 'dark' : 'light'}`}>{props.NavbarLink3}</Link>
                             </li>
                         </ul>
                         <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
