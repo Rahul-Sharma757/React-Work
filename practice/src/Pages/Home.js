@@ -36,7 +36,7 @@ function Home() {
       <div className="container">
         <Alert alert={alert} />
         <h1 className='text-center'>Hello</h1>
-        <TextFrom showAlert={showAlert} />
+        <TextFrom showAlert={showAlert} textareaLabel='Testing' />
       </div>
     </>
   )
