@@ -40,6 +40,10 @@ import ActivationApp from './pages/ActivationApp';
 import PartnerPortal from './pages/PartnerPortal';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SoftwareDeveloperNodeJS from './pages/SoftwareDeveloperNodeJS';
+import SalesforceDeveloper from './pages/SalesforceDeveloper';
+import ReactJSDeveloper from './pages/ReactJSDeveloper';
+import MernStackDeveloper from './pages/MernStackDeveloper';
 
 function App() {
   return (
@@ -82,6 +86,10 @@ function App() {
           <Route exact path='/downloadPortal' element={<DownloadPortal />}></Route>
           <Route exact path='/activationApp' element={<ActivationApp />}></Route>
           <Route exact path='/partnerPortal' element={<PartnerPortal />}></Route>
+          <Route exact path='/softwareDeveloperNodeJS' element={< SoftwareDeveloperNodeJS />}></Route>
+          <Route exact path='/salesforceDeveloper' element={<SalesforceDeveloper />}></Route>
+          <Route exact path='/reactJsDeveloper' element={<ReactJSDeveloper />}></Route>
+          <Route exact path='/mernStackDeveloper' element={<MernStackDeveloper />}></Route>
         </Routes>
         <Footer />
       </Router>

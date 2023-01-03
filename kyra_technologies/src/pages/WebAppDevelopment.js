@@ -1,13 +1,10 @@
-import React from 'react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import webDevelopmentImg from '../img/Web-Application-Development-GuglY-Tech-1068x564.jpg'
-import toolsImg from '../img/tools.jpg'
+import React from 'react';
+import webDevelopmentImg from '../img/Web-Application-Development-GuglY-Tech-1068x564.jpg';
+import toolsImg from '../img/tools.jpg';
 
 function WebAppDevelopment() {
     return (
         <>
-            <Header />
             <section className=" bg-career position-relative pt-350">
                 <div className="about-absolute">
                     <div className="container text-center position-relative align-center">
@@ -65,7 +62,6 @@ function WebAppDevelopment() {
                     <p>Business systems created on web applications are accessible anytime and customised throughout the world and totally flexible.</p>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

@@ -1,11 +1,8 @@
 import React from 'react'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import MaintainanceSupportImg from '../img/maintenance&support.png'
 function MaintainanceSupport() {
     return (
         <>
-            <Header />
             <section className="pb-8 bg-career position-relative pt-350">
                 <div className="about-absolute">
                     <div className="text-center position-relative align-center">
@@ -37,7 +34,6 @@ function MaintainanceSupport() {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

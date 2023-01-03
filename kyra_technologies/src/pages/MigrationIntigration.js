@@ -1,12 +1,9 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import migrationPageImg from '../img/migration&integration.jpg'
 
 function MigrationIntigration() {
     return (
         <>
-            <Header />
             <section className="pb-8 bg-career position-relative pt-350">
                 <div className="about-absolute">
                     <div className="text-center position-relative align-center">
@@ -50,7 +47,6 @@ function MigrationIntigration() {
                     </ul>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

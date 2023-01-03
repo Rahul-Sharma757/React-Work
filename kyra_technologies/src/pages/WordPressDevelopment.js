@@ -1,11 +1,8 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 
 function WordPressDevelopment() {
     return (
         <>
-            <Header />
             <section className="pb-8 bg-career position-relative pt-350">
                 <div className="about-absolute">
                     <div className="container-fluid text-center position-relative align-center">
@@ -19,7 +16,6 @@ function WordPressDevelopment() {
                     <h2 className="logo-clr text-center">Comming Soon...</h2>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

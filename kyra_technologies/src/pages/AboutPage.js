@@ -1,6 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import TeamImg from '../img/team.jpg';
 import EnthusiastImg from '../img/TA5FSPY9H-UA4TP8PQQ-d8390cab0651-512.png';
 import ArchImg from '../img/archi.png';
@@ -10,7 +8,6 @@ import TeamMemberImg2 from '../img/Senior2.jpeg';
 function AboutPage() {
     return (
         <>
-            <Header />
             <section className="pb-8 bg-about position-relative pt-350">
                 <div className="about-absolute">
                     <div className="container-fluid text-center position-relative align-center">
@@ -101,28 +98,27 @@ function AboutPage() {
                         <div className="col-md-4 col-sm-6">
                             <div className="card p-3 border-0">
                                 <img src={EnthusiastImg} className="img-fluid w-50 mx-auto rounded-circle" alt='Founder' />
-                                    <p className="lead mt-3 mb-1">Harvinder Singh</p>
-                                    <p className="text-muted">Founder</p>
+                                <p className="lead mt-3 mb-1">Harvinder Singh</p>
+                                <p className="text-muted">Founder</p>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-6">
                             <div className="card p-3 border-0">
                                 <img src={TeamMemberImg1} className="img-fluid w-50 mx-auto rounded-circle" alt='Team Member 1' />
-                                    <p className="lead mt-3 mb-1">Raj Bhatia</p>
-                                    <p className="text-muted">Senior Software Engineer</p>
+                                <p className="lead mt-3 mb-1">Raj Bhatia</p>
+                                <p className="text-muted">Senior Software Engineer</p>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-6">
                             <div className="card p-3 border-0">
                                 <img src={TeamMemberImg2} className="img-fluid w-50 mx-auto rounded-circle" alt='Team Member 2' />
-                                    <p className="lead mt-3 mb-1">Sudhir Kaushal</p>
-                                    <p className="text-muted">Front-end Developer</p>
+                                <p className="lead mt-3 mb-1">Sudhir Kaushal</p>
+                                <p className="text-muted">Front-end Developer</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

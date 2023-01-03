@@ -1,12 +1,9 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import whyusImg from '../img/whyus';
 import iosImg from '../img/ios.jpg';
 function MobileAppDevelopment() {
     return (
         <>
-            <Header />
             <section className="pb-8 bg-career position-relative pt-350">
                 <div className="about-absolute">
                     <div className="Container text-center position-relative align-center">
@@ -79,7 +76,6 @@ function MobileAppDevelopment() {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

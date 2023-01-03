@@ -1,13 +1,11 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import { Link } from 'react-router-dom';
 import CaseStudyData from "../components/CaseStudyData"
 
 function CaseStudy() {
     return (
         <>
-            <Header />
-            <section className=" project-detail-banner position-relative pt-350">
+            <section className="project-detail-banner position-relative pt-350">
                 <div className="about-absolute">
                     <div className="container-fluid text-center position-relative align-center">
                         <h2 className="display-4 logo-clr fw-bold">Case Study</h2>
@@ -22,26 +20,25 @@ function CaseStudy() {
                         we assisted by building IT System for our client to propel their Business forward.</p>
                     <h6 className="fw-bold lead text-center">Here it is:</h6>
                     <div className="row mt-5">
-                    {CaseStudyData.map((value, key)=> (
-                      
-                      <div className="col-lg-4 mt-5">
-                          <div className="card border-0 shadow-sm rounded">
-                              <img src={value.image} className="img-fluid" alt="MPS" />
-                                  <div className="card-body text-center pb-5">
-                                      <h3>{value.heading}</h3>
-                                      <p>{value.para}
-                                      </p>
-                                      <a href={value.link} className="btn position-relative px-4 btn-hover logo-clr shadow-none mt-4 mt-lg-0">Read More
-                                          <span className="forward-icon"><i className="fas fa-long-arrow-alt-right fs-5"></i></span>
-                                      </a>
-                                  </div>
-                          </div>
-                      </div>
-                    ))}
+                        {CaseStudyData.map((value, key) => (
+
+                            <div className="col-lg-4 mt-5">
+                                <div className="card border-0 shadow-sm rounded">
+                                    <img src={value.image} className="img-fluid" alt="MPS" />
+                                    <div className="card-body text-center pb-5">
+                                        <h3>{value.heading}</h3>
+                                        <p>{value.para}
+                                        </p>
+                                        <Link to={value.link} className="btn position-relative px-4 btn-hover logo-clr shadow-none mt-4 mt-lg-0">Read More
+                                            <span className="forward-icon"><i className="fas fa-long-arrow-alt-right fs-5"></i></span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }
