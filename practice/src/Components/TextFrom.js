@@ -41,7 +41,7 @@ export default function TextFrom(props) {
         let cptxt = document.getElementById('mybox2');
         cptxt.select();
         navigator.clipboard.writeText(cptxt.value);
-        document.getSelection().removeAllRanges();
+        document.getSelection().removeAllRanges()
         props.showAlert("Copied to clipboard", "success")
     }
     // Remove extra Space //

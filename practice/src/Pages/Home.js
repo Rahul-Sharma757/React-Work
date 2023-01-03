@@ -17,7 +17,9 @@ function Home() {
   }
 
   const [mode, setMode] = useState('light'); // whether dark mode is enable or not
-  const toggleMode = () => {
+  const toggleMode = (cls) => {
+    removeBodyClassess();
+    document.body.classList.add('bg-' + cls);
     if (mode === 'light') {
       setMode('dark');
       document.body.style.backgroundColor = 'black';
@@ -27,8 +29,16 @@ function Home() {
       setMode('light');
       document.body.style.backgroundColor = 'white';
       document.body.style.color = 'black';
-      showAlert("Light mode has been enabled", "sucess");
+      showAlert("Light mode has been enabled", "success");
     }
+  }
+  const removeBodyClassess = () => {
+    document.body.classList.remove('bg-light');
+    document.body.classList.remove('bg-dark');
+    document.body.classList.remove('bg-warning');
+    document.body.classList.remove('bg-success');
+    document.body.classList.remove('bg-danger');
+    document.body.classList.remove('bg-primary');
   }
   return (
     <>
@@ -36,7 +46,7 @@ function Home() {
       <div className="container">
         <Alert alert={alert} />
         <h1 className='text-center'>Hello</h1>
-        <TextFrom showAlert={showAlert} textareaLabel='Testing' />
+        <TextFrom showAlert={showAlert} textareaLabel='practice' />
       </div>
     </>
   )
