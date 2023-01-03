@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
-function UX_Research() {
+function UIAnimation() {
     return (
         <>
             <Header />
@@ -10,7 +10,7 @@ function UX_Research() {
                 <div className="about-absolute">
                     <div className="text-center position-relative align-center">
                         <h2 className="display-4 fw-bold logo-clr">UI/UX</h2>
-                        <h3 className="mt-3">UX Research</h3>
+                        <h3 className="mt-3">UI & Animation</h3>
                     </div>
                 </div>
             </section>
@@ -24,4 +24,4 @@ function UX_Research() {
     )
 }
 
-export default UX_Research
+export default UIAnimation

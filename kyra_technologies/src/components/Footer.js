@@ -1,42 +1,24 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 function Footer() {
 
-    {
-        // let msg = document.getElementById('message');
-        // let submitBtn = document.getElementById('submition');
-        document.getElementById('submition').disabled = true;
-        document.getElementById('message').addEventListener("change", stateHandle);
-        function stateHandle() {
-          if (document.getElementById("message").input.value === null) {
-            document.getElementById('submition').disabled = true;
-          } else {
-            document.getElementById('submition').disabled = false;
-          }
-        }
-     }
-     
-    var submitionss = () => {
-     document.getElementById('hiddenFrame').style.display = "block";
-     document.getElementById('contactForm').style.display = "none";
-    }
 
     return (
         <div className='wrapper'>
             <section className="pt-6 footer-bg">
                 <div className="container text-center">
                     <div className="d-md-flex align-items-center justify-content-center mt-3">
-                        <a href="mailto:hr@prlxweb.com" className="text-decoration-none text-dark fs-5 ms-4">
+                        <Link to="mailto:hr@prlxweb.com" className="text-decoration-none text-dark fs-5 ms-4">
                             <div className="d-flex justify-content-center">
                                 <div className="w-10 text-center"><i className="far fa-envelope"></i></div>
                                 <div className="bottom-hover ms-3">hr@prlxweb.com</div>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <p className="fs-6 mt-1">E-309, Second Floor, Industrial Area Phase 8A, Mohali 160055, India</p>
-                    <a href=' ' className="btn py-2 position-relative px-4 btn-hover shadow-none logo-clr" data-bs-toggle="modal" data-bs-target="#exampleModalContact">Say Hii!
+                    <Link to=' ' className="btn py-2 position-relative px-4 btn-hover shadow-none logo-clr" data-bs-toggle="modal" data-bs-target="#exampleModalContact">Say Hii!
                         <span className="forward-icon"><i className="fas fa-long-arrow-alt-right fs-5"></i></span>
-                    </a>
+                    </Link>
                     <div className="modal fade" id="exampleModalContact" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog modal-fullscreen">
                             <div className="modal-content footer-bg">
@@ -53,7 +35,7 @@ function Footer() {
                                                 <form id="contactForm" action="Contact.php" target="hiddenFrame" method="post">
                                                     <div className="form-group mb-3 text-start">
                                                         <label htmlFor="name" className="lead">Name</label>
-                                                        <input type="text" className="form-control py-2" id="name" name="name" placeholder="enter your name"  />
+                                                        <input type="text" className="form-control py-2" id="name" name="name" placeholder="enter your name" />
                                                     </div>
                                                     <div className="form-group mb-3 text-start">
                                                         <label htmlFor="mail" className="lead">E-mail</label>
@@ -72,25 +54,25 @@ function Footer() {
                                                         <textarea name="message" className="form-control py-2" placeholder="Your Message" required></textarea>
                                                     </div>
                                                     <div className="form-group text-start mt-5">
-                                                        <input type="submit" id="submition" className="btn py-2 position-relative px-4 btn-hover shadow-none logo-clr" value="Send Message" onClick={submitionss} /> <br />
+                                                        <input type="submit" id="submition" className="btn py-2 position-relative px-4 btn-hover shadow-none logo-clr" value="Send Message" /> <br />
                                                         <lable htmlFor='submition' className="text-muted mt-2"><small>Please fill the form first to enable the Button.</small></lable>
                                                     </div>
                                                 </form>
                                             </div>
                                             <div className="col-lg-6 mt-3 p-3 text-start">
                                                 <div className="d-sm-flex">
-                                                    <a href="tel:+91-9041119889" className="text-decoration-none text-dark">
+                                                    <Link to="tel:+91-9041119889" className="text-decoration-none text-dark">
                                                         <div className="d-alex justify-content-start align-items-center">
                                                             <span><i className="fal fa-phone-volume me-3 fs-4"></i></span>
                                                             <span className="fs-5">+91-9041119889</span>
                                                         </div>
-                                                    </a>
-                                                    <a href="mailto:hr@prlxweb.com" className="text-decoration-none text-dark ms-4">
+                                                    </Link>
+                                                    <Link to="mailto:hr@prlxweb.com" className="text-decoration-none text-dark ms-4">
                                                         <div className="d-alex justify-content-start align-items-center">
                                                             <span><i className="far fa-envelope me-3 fs-4"></i></span>
                                                             <span className="fs-5">hr@prlxweb.com</span>
                                                         </div>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                                 <p className="mt-3 fs-5">E-309, Second Floor, Industrial Area Phase 8A, <br />
                                                     Mohali 160055, India
@@ -112,7 +94,7 @@ function Footer() {
             <section className="py-3 footer-bg">
                 <div className="container text-center">
                     <div className="d-flex align-items-center justify-content-between">
-                        <a href="/privacyPolicy" className="text-decoration-none text-dark fs-17 bottom-hover">Privacy Policy</a> <br />
+                        <Link to="/privacyPolicy" className="text-decoration-none text-dark fs-17 bottom-hover">Privacy Policy</Link> <br />
                         <span className="fs-17"><i className="far fa-copyright"></i> 2016-2021</span>
                     </div>
                 </div>
